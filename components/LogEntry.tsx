@@ -1,4 +1,4 @@
-import { Entry, Story } from '@/util/types'
+import { Entry } from '@/util/types'
 import Markdown from 'react-markdown'
 import { Icon } from '@iconify/react'
 
