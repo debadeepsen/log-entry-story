@@ -25,6 +25,7 @@ export default function RootLayout({
           rel='stylesheet'
         ></link>
         <script
+          data-collect-dnt='true'
           async
           src='https://scripts.simpleanalyticscdn.com/latest.js'
         ></script>
