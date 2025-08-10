@@ -9,18 +9,21 @@ type LogEntryProps = {
 const LogEntry = ({ entry }: LogEntryProps) => (
   <article className='mb-6 p-4 bg-white rounded-sm shadow-md'>
     <header className='mb-2'>
-      <h2 className='text-xl font-semibold' style={{
-        color: entry.role === 'Engineer' ? '#d56565' : '#2196f3',
-      }}>
+      <h2
+        className='text-xl font-semibold'
+        style={{
+          color: entry.role === 'Engineer' ? '#d56565' : '#2196f3'
+        }}
+      >
         Log {entry.id} – {entry.author}
       </h2>
       <div className='text-sm text-gray-500 mt-2 mb-4'>
-        <div className='flex items-center gap-2'>
-          <Icon icon='famicons:location-outline' inline />
+        <div className='flex items-center'>
+          <Icon icon='famicons:location-outline' className='mr-2' />
           {entry.location}
         </div>
-        <div className='flex items-center gap-2'>
-          <Icon icon='fontisto:date' />
+        <div className='flex items-cente'>
+          <Icon icon='fontisto:date' className='mr-2 relative top-1' />
           Stardate {entry.stardate.split('.').join('. ')}
         </div>
       </div>
