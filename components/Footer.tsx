@@ -9,7 +9,7 @@ const Footer = () => (
       distant future, exploring humanity's interaction with artificial
       intelligence.
     </p>
-    <p className='text-sm text-gray-600 mb-12'>
+    <div className='text-sm text-gray-600 mb-12'>
       <div className='flex mb-2 gap-1 items-center'>
         <Icon icon='arcticons:openai-chatgpt' />
         Full ChatGPT conversation available{' '}
@@ -31,9 +31,8 @@ const Footer = () => (
         >
           here <Icon icon='lets-icons:external' />
         </a>
-      </div>
-      
-    </p>
+      </div>      
+    </div>
   </footer>
 )
 
