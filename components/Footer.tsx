@@ -10,14 +10,29 @@ const Footer = () => (
       intelligence.
     </p>
     <p className='text-sm text-gray-600 mb-12'>
-      Full ChatGPT conversation available{' '}
-      <a
-        target='_blank'
-        href='https://chatgpt.com/share/68988d5b-c658-8009-a8d6-b06819a4be37'
-        className='text-blue-500 hover:underline inline-flex items-center gap-1'
-      >
-        here <Icon icon='lets-icons:external' />
-      </a>
+      <div className='flex mb-2 gap-1 items-center'>
+        <Icon icon='arcticons:openai-chatgpt' />
+        Full ChatGPT conversation available{' '}
+        <a
+          target='_blank'
+          href='https://chatgpt.com/share/68988d5b-c658-8009-a8d6-b06819a4be37'
+          className='text-blue-500 hover:underline inline-flex items-center gap-1'
+        >
+          here <Icon icon='lets-icons:external' />
+        </a>
+      </div>
+      <div className='flex mb-2 gap-1 items-center'>
+        <Icon icon='ri:gemini-fill' />
+        Full Gemini conversation available{' '}
+        <a
+          target='_blank'
+          href='https://g.co/gemini/share/7dd937544b7c'
+          className='text-blue-500 hover:underline inline-flex items-center gap-1'
+        >
+          here <Icon icon='lets-icons:external' />
+        </a>
+      </div>
+      
     </p>
   </footer>
 )
