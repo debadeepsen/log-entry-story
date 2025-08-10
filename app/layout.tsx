@@ -24,6 +24,10 @@ export default function RootLayout({
           href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
           rel='stylesheet'
         ></link>
+        <script
+          async
+          src='https://scripts.simpleanalyticscdn.com/latest.js'
+        ></script>
       </head>
       <body>{children}</body>
     </html>
