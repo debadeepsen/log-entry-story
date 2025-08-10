@@ -14,7 +14,7 @@ const HomePage = async () => {
     <main className='max-w-3xl mx-auto p-4'>
       <div
         style={{
-          backgroundImage: 'url(/images/spaceship-7722045_1280.jpg)',
+          backgroundImage: 'url(/log-entry-story/images/spaceship-7722045_1280.jpg)',
           backgroundPositionY: -120
         }}
         className='bg-cover h-64 mb-8 flex items-end text-white'
