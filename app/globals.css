@@ -18,5 +18,5 @@ body {
 }
 
 pre, code {
-  @apply bg-gray-100 p-2 rounded-md;
+  @apply bg-zinc-900 text-sm text-lime-400 p-2 rounded-sm;
 }
