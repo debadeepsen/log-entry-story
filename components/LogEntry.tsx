@@ -6,17 +6,27 @@ type LogEntryProps = {
   entry: Entry
 }
 
+const colors = {
+  Engineer: '#d56565',
+  Investigator: '#2196f3'
+}
+
 const LogEntry = ({ entry }: LogEntryProps) => (
   <article className='mb-6 p-4 bg-white rounded-sm shadow-md'>
     <header className='mb-2'>
-      <h2
-        className='text-xl font-semibold'
+      <h2 className='text-2xl text-zinc-500 font-semibold'>Log {entry.id}</h2>
+      <h3
+        className='text-xl font-semibold my-2 flex items-center'
         style={{
-          color: entry.role === 'Engineer' ? '#d56565' : '#2196f3'
+          color: colors[entry.role as keyof typeof colors],
         }}
       >
-        Log {entry.id} – {entry.author}
-      </h2>
+        {entry.author}
+        <div className='ml-2 text-xs p-2 rounded-full text-center uppercase'
+        style={{
+          background: colors[entry.role as keyof typeof colors] + '15',
+        }}>{entry.role}</div>
+      </h3>
       <div className='text-sm text-gray-500 mt-2 mb-4'>
         <div className='flex items-center'>
           <Icon icon='famicons:location-outline' className='mr-2' />
