@@ -12,7 +12,15 @@ const HomePage = async () => {
 
   return (
     <main className='max-w-3xl mx-auto p-4'>
-      <h1 className='text-4xl font-bold mb-6'>{story.title}</h1>
+      <div
+        style={{
+          backgroundImage: 'url(/images/spaceship-7722045_1280.jpg)',
+          backgroundPositionY: -120
+        }}
+        className='bg-cover h-64 mb-8 flex items-end text-white'
+      >
+        <h1 className='text-4xl font-bold ml-6 mb-6'>{story.title}</h1>
+      </div>
       <div className='mb-6'>
         <h2 className='text-xl font-bold mb-2'>Authors:</h2>
         {story.authors.join(', ')}
